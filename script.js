@@ -4,6 +4,6 @@ function compute()
     r = Document.getElementById("rate").value;
     t = Document.getElementById("years").value;
     var totalinterest = p * r * t;
-    return totalinterest;
+    print.value(p);
 }
         
