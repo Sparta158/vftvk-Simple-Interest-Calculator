@@ -7,7 +7,7 @@ function compute()
     document.getElementById('text1').value=p;
     document.getElementById('text2').value=r+"%";
     document.getElementById('text3').value=totalinterest;
-document.write("Hello");
+
 
 }
 function updateTextInput(val)
