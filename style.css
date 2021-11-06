@@ -1,5 +1,5 @@
 body {background-color:white; align-self: center;}
+div{border-radius: 25px;}
 h1{color:grey; font-size: 42px;}
 form{align-items: center;}
-fieldset{border: none; float: left;}  
-
+fieldset{border: none; float: left;}
