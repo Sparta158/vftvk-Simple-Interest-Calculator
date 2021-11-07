@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <title>Web App - Simple Interest Calculator</title>
-    <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <div class='maindiv'>
+<title>Web App - Simple Interest Calculator</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+   
     <title>Simple Interest Calculator</title>
-    </head>
-    <body>
-        <p id="alert" onclick="ShiftFocus()"></p>
+
+
         <h1>Simple Interest Calculator</h1>
-        <div class='alert'></div>
-        <form class='main'>
-        <fieldset>
-            <label for="principal">Amount</label><br><br>
-            <label for="rate">Interest Rate</label><br><br>
-            <label for="years">No. of Years </label><br><br>
-        <input type="button" onclick="compute()" value="Compute Interest">
-        <p id="text1"></p>
-        <p id="text2"></p>
-        <p id="text3"></p>
-        <p id="text4"></p>
-    </fieldset>
-        <fieldset>
+
+        <!-- <form class='main'> -->
+        <!-- <fieldset> -->
+            <label for="principal">Amount</label>
             <input type="number" id="principal"><br><br>
-            <input type="range"  id="rate" min = 1 max=20 value=10.25 step=0.25 onchange="updateTextInput(this.value);"><!--<input type="text" id="textInput" value="10.25%">-->     <br><br>
+            <label for="rate">Interest Rate</label>
+            <input type="range"  id="rate" min = 1 max=20 value=10.25 step=0.25 onchange="updateTextInput(this.value)" ><span id="rate_val">10.25%</span><br><br>
+            <label for="years">No. of Years </label>
             <select name="years" id="years">
                 <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option> 
                 <option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option>
             </select><br><br>
-        </fieldset>
-        <fieldset><br><br><p id="texthere"></p></fieldset>
+        <input type="button" onclick="compute()" value="Compute Interest"><br><br>
+        <span id="result"></span>
+        <!--<p id="text1"></p>
+        <p id="text2"></p>
+        <p id="text3"></p>
+        <p id="text4"></p>-->
+    <!-- </fieldset> -->
+        <!-- <fieldset> -->
+         
+        <!-- </fieldset> -->
+        <!-- <fieldset><br><br></fieldset> -->
     </form>
-    </div>
-    </body>
 
+    </body>
+</div>
     <footer>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    
         
-        <p>© Everyone Can Get Rich</p>
+        <p>&#169; This Calculator Belongs to Eric</p>
     </footer>
 
 </html>
